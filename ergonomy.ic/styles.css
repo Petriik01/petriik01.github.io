@@ -1,0 +1,44 @@
+.karta{
+    padding-top: 60px;
+    padding-bottom: 82px;
+    padding-left: 42px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transform: translateX(-6px) translateY(6px);
+    transform: translateX(-6px) translateY(6px);
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
+    background: #fff;
+    border-top: 1px solid #e1e1e1;
+}
+
+.karta:hover {
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
+    border: 1px solid #000;
+}
+
+.karta:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+.karta:hover {
+    color: #ff5f00;
+}
+.karta{
+    width: 100%!important;
+    transition: .2s;
+    border: 1px solid black;
+}
+.karta{
+    font-weight: bold;
+    color: #ff5f00!important;
+}
+
+.karta:hover{
+    box-shadow: -6px 6px 0 #000;
+}
