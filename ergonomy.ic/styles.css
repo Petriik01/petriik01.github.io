@@ -1,44 +1,138 @@
-.karta{
-    padding-top: 60px;
-    padding-bottom: 82px;
-    padding-left: 42px;
-    padding-right: 40px;
+:root {
+    --orange: #ff5f00;
+    --black: #111;
+}
+.p,p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+.color--black {
+    color: var(--black);
+}
+.p--large{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+a{
+    text-decoration: none!important;
+}
+/*reference*/
+.reference-list {
+    width: 100% !important;
+    margin-top: 15px!important;
+}
+
+.reference-items {
+    width: 100%;
+    margin-bottom: -1px;
+}
+
+.reference-items:last-of-type .reference-items-content {
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.reference-items-content {
+    padding: 30px 20px 41px 21px;
     display: flex;
     align-items: center;
     justify-content: center;
-    -webkit-transform: translateX(-6px) translateY(6px);
     transform: translateX(-6px) translateY(6px);
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
-    transition: transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
     background: #fff;
-    border-top: 1px solid #e1e1e1;
+    border-top: 1px solid #d2d2d2;
 }
 
-.karta:hover {
-    -webkit-transform: translateX(0) translateY(0);
+.reference-items-title {
+    width: 100%;
+    max-width: 240px;
+    float: left;
+    margin-right: 80px;
+}
+
+
+.reference-items-title p.p--large.color--black {
+    font-size: 45px;
+    transform: scale(.711);
+    transition: -webkit-transform .3s linear;
+    transition: transform .3s linear;
+    text-align: left;
+    float: left;
+    line-height: 1.1;
+}
+
+.join-list-item-body {
+    width: calc(100% - 380px);
+    float: left;
+}
+
+.join-list-item-body p {
+    max-width: 440px;
+    margin: 0 auto;
+}
+.reference-items-side .p.color--black {
+    font-weight: 600;
+}
+.reference-items-side .p.color--black {
+    font-weight: 600;
+}
+.reference-items:focus .reference-items-content,.reference-items:hover .reference-items-content {
     transform: translateX(0) translateY(0);
-    border: 1px solid #000;
+    border: 1px solid var(--black);
 }
 
-.karta:hover {
-    -webkit-transform: scale(1);
-    transform: scale(1)
+.reference-items:focus .arrow-container .arrow,.reference-items:hover {
+    width: 100%;
 }
 
-.karta:hover {
-    color: #ff5f00;
+.reference-items:focus,.reference-items:hover {
+    box-shadow: -6px 6px 0 var(--black);
 }
-.karta{
-    width: 100%!important;
-    transition: .2s;
-    border: 1px solid black;
-}
-.karta{
-    font-weight: bold;
-    color: #ff5f00!important;
+.reference-items-side {
+    width: 100%;
+    max-width: 140px;
+    float: right;
+    margin-left: 20px;
+    text-align: center;
 }
 
-.karta:hover{
-    box-shadow: -6px 6px 0 #000;
+@media (max-width: 1024px) {
+    .reference-list {
+        margin-top: 15px;
+    }
+    .reference-items-content {
+        padding-top:36px;
+        padding-bottom: 36px;
+        justify-content: space-between;
+    }
+    .reference-items-title {
+        margin-right:0;
+        padding-right: 16px;
+        font-size: 18px;
+        line-height: 22px;
+        transform: none;
+    }
+    .reference-items-title p.p--large.color--black {
+        font-size:18px;
+        line-height: 22px;
+        transform: none;
+    }
+    .reference-items-side .p.color--black {
+        white-space:nowrap;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .reference-items-side {
+        margin-left:0;
+        flex: 1;
+        flex-grow: 0;
+    }
+    .join-list-item-body {
+        display:none;
+    }
 }
+
+
