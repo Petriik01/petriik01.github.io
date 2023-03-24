@@ -1,0 +1,102 @@
+
+.header {
+    padding: 3rem 0 7rem;
+    position: relative;
+    background-color: #193826;
+    background-size: cover;
+    z-index: 0;
+}
+
+.header h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.1;
+    z-index: 1;
+}
+
+.header h2 {
+    color: rgba(255, 255, 255, .6);
+    font-weight: 600;
+    z-index: 1;
+    font-size: 1.2rem;
+}
+
+.header a {
+    color: rgba(255, 255, 255, .8);
+    text-decoration: underline;
+    z-index: 1;
+}
+
+@media(min-width:992px) {
+    .header h1 {
+        font-size: 3rem;
+    }
+    .header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.header .header-cards {
+    position: relative;
+    z-index: 1;
+}
+
+.header .header-cards .shape {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .3);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+}
+
+.header .header-cards .card {
+    opacity: 1;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: .05rem;
+    color: #212529;
+    transition: .15s all;
+}
+
+.header .header-cards .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+}
+.header .header-cards .card:hover i {
+    color: #204831;
+}
+.mist_block {
+    background: url('mist.png') no-repeat center top;
+    background-size: cover;
+    display: block;
+    float: left;
+    margin: 0;
+    height: 120px;
+    width: 100%;
+    z-index: 2;
+}
+.team-card{
+    width: 300px;
+    border-top: 2px solid #193826;
+    border-radius: 0.375rem;
+    background: white;
+}
+.team-card-header{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1.1rem;
+}
+.team-card-content{
+    margin-top: 20px;
+    color: #222;
+    font-size: 0.8rem;
+}
+.team-card-contact p{
+    color: #1b5632 !important;
+    margin-bottom: 2px;
+}
