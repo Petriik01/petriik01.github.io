@@ -2,7 +2,7 @@
 .header {
     padding: 3rem 0 7rem;
     position: relative;
-    background-color: #193826;
+    background: url("bg.png") #193826 fixed bottom;
     background-size: cover;
     z-index: 0;
 }
@@ -34,6 +34,22 @@
     }
     .header h2 {
         font-size: 1.5rem;
+    }
+}
+@media(max-width: 1024px){
+    .mobile-div{
+        display: none!important;
+    }
+    .mobile img{
+        display: none!important;
+    }
+    .mobile-img img{
+        text-align: center!important;
+        justify-content: center!important;
+    }
+    .mobile{
+        width: 100%!important;
+        text-align: center!important;
     }
 }
 
