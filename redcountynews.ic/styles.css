@@ -116,3 +116,16 @@
     color: #1b5632 !important;
     margin-bottom: 2px;
 }
+.button{
+    color: #193826!important;
+    text-decoration: none;
+    font-size: 1.4rem;
+    border: 3px solid #193826;
+    padding: 10px 20px;
+    transition: .2s;
+}
+.button:hover{
+    color: white!important;
+    background: #193826;
+    transition: .2s;
+}
