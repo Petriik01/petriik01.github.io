@@ -2,7 +2,7 @@
 .header {
     padding: 3rem 0 7rem;
     position: relative;
-    background: url("bg.png") #193826 fixed bottom;
+    background: url("img/bg.png") #193826 fixed bottom;
     background-size: cover;
     z-index: 0;
 }
@@ -87,7 +87,7 @@
     color: #204831;
 }
 .mist_block {
-    background: url('mist.png') no-repeat center top;
+    background: url('img/mist.png') no-repeat center top;
     background-size: cover;
     display: block;
     float: left;
